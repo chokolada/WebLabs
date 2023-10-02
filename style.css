@@ -1,0 +1,137 @@
+.firstPage {
+    background-image: url('/images/Bitmap.jpg');
+    width: 100%;
+    height: 700px;
+    opacity: 100%;
+    background-size: 100% 100%;
+}
+body {
+    margin: 0;
+}
+header {
+    text-align: center;
+}
+nav {
+    margin-top: 30px;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;   
+    list-style-type: none;
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik';
+    border: 0px;
+    margin-right: 10px;
+}
+button {
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+}
+button:active {
+    opacity: 0.8;
+}   
+#contactButton {
+    width: 90px;
+    height: 34px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+.pageInfo {
+    margin: 0% auto;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.firstInfo {
+    color: white;
+    font-family: 'Rubik';
+    width: 440px;
+    height: 180px;
+}
+.mediaButton button {
+    color: white;
+    font-family: 'Rubik';
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hamburger {
+    opacity: 0;
+}
+#firstInfoTitle {
+    font-size: 16px;
+}
+#firstInfoText {
+    font-size: 30px;
+    font-family: 'Merriweather'
+}
+nav ul li a {
+    transition: margin-bottom 1s ease;
+}
+nav ul li a:hover {
+    margin-bottom: 10px;
+}
+#logo {
+    animation: rotate5deg 3s linear infinite; 
+}
+@media screen and (min-width: 320px ) and (max-width: 768px) {
+    #hamburger {
+        opacity: 1;
+    }
+    .navItem {
+        display: none;
+        transition: opacity 1s ease;
+        margin-top: 20px;
+    }
+    #navMenu {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #hamburger:active {
+        opacity: 0.5;
+    }
+    .pageInfo {
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #firstInfoTitle {
+        font-size: 12px;
+    }
+    #firstInfoText {
+        font-size: 16px;
+    }
+    #logo {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+}
+@keyframes rotate5deg {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}

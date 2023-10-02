@@ -1,0 +1,64 @@
+.fourthPage {
+    width: 100%;
+    height: 532px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.infoColumns {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 470px;
+    margin-left: -130px;
+}
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.thirdRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center ;
+}
+#columnsTitle {
+    font-size: 18px;
+    font-family: 'Merriweather';
+}
+#columnsInfo {
+    font-family: 'Rubik';
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #646D70;
+}
+@media screen and (min-width: 320px ) and (max-width: 768px) {
+    .fourthPage img {
+        display: none;
+    }
+    #columnsTitle {
+        font-size: 12px;
+    }   
+    .infoColumns {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        margin-left: 0px;
+    }
+    .fourthPage {
+        justify-content: start;
+        align-items: start;
+    }
+}
