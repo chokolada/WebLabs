@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: 	#eeeee8a8;
+    border-radius: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+}
+.navScreensButtons {
+    width: 27%;
+}
+.navScreensButtons ul {
+    display: flex;
+    justify-content: space-between;
+}
+.seacrchBarMenu {
+    width: 40%;
+}
+.seacrchBarMenu ul {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.title {
+    font-family: "Martian Mono";
+}
+.myPlatesButton {
+    font-family: "Martian Mono";
+}
+.createPlateButton {
+    font-family: "Martian Mono";
+}
+li {
+    height: 40px;
+    margin: auto 0;
+    display: flex;
+    align-items: end;
+}
+#createPlateButton {
+    background-color: rgba(128, 128, 128, 0.648);
+}
+.searchBar{
+    height: 100%;
+    width: 100%;
+}
+#searchBar {
+    width: 50%;
+}
+.searchButton {
+    width: 100px;
+    height: 35px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 5px;
+}
+.clearButton {
+    width: 100px;
+    height: 35px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+}
+button:active {
+    opacity: 0.5;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lab_3/manageHeader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&family=Merriweather:wght@900&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Lab_3/creationPage.css">
+    <link rel="stylesheet" href="/Lab_3/main.css">
+    <title>Lab_3</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navScreensButtons">
+                <ul>
+                    <li><div class="title">My Ceramic</div></li>
+                    <li id="myPlatesButton"><a href="/Lab_3/managePage.html" class="myPlatesButton">My Plates</a></li>
+                    <li id="createPlateButton"><a href="/Lab_3/creationPage.html" class="createPlateButton">Create Plate</a></li>
+                </ul>
+            </div>
+            <div class="seacrchBarMenu">
+                <ul>
+                    <li id="searchBar"><input type="text" placeholder="Search by title" class="searchBar"></li>
+                    <li><button class="searchButton" onclick="searchFunc()">Search</button></li>
+                    <li><button class="clearButton" onclick="clearFunc()">Clear</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="managmentPage">
+        <div class="leftSection">
+            <div class="leftTopSection">
+                <div class="sortingButton">
+                <ul>
+                    <h3>Manage Plates</h4>
+                    <li>
+                        Sort by the most expensive plates
+                    </li>
+                    <li class="sortingSwitcher"> 
+                        <div class="switcherOutside">
+                            <div onclick="switcherFunction(this)" class="switherInside"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dividingSlice"></div>
+            </div>
+            </div>
+            <div class="leftBottomSection">
+                <h3>Count total daily expenses:</h3>
+                <button class="countButton" onclick="totalCount()">Count</button>
+                <div class="totalExpenses">Total expenses: </div>
+            </div>
+        </div>
+        <div class="rightSection">
+            <div class="createPlate" onclick="plateCreation()">
+                <img src="/Lab_3/images/images.png" alt="" width="150px" height="150px">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lab_3/creationHeader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&family=Merriweather:wght@900&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Lab_3/creationPage.css">
+    <link rel="stylesheet" href="/Lab_3/main.css">
+    <title>Lab_3</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navScreensButtons">
+                <ul>
+                    <li><div class="title">My Ceramic</div></li>
+                    <li id="myPlatesButton"><a href="/Lab_3/managePage.html" class="myPlatesButton">My Plates</a></li>
+                    <li id="createPlateButton"><a href="/Lab_3/creationPage.html" class="createPlateButton">Create Plate</a></li>
+                </ul>
+            </div>
+            <div class="seacrchBarMenu">
+                <ul>
+                    <li id="searchBar"><input type="text" placeholder="Search by title" class="searchBar"></li>
+                    <li><button class="searchButton" onclick="searchFunc()">Search</button></li>
+                    <li><button class="clearButton" onclick="clearFunc()">Clear</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="creationPage">
+        <h1>Create Plate</h1>
+        <form id="plateForm">
+          <div class="creationPageTitle">
+            <h5>Title</h5>
+            <input type="text" name="title" id="title" placeholder="Text...">
+          </div>
+          <div class="creationPageDescription">
+            <h5>Description</h5>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+          </div>
+          <div class="creationPageCost">
+            <h5>Cost($)</h5>
+            <input type="number" name="cost" id="cost" min="1" style="width: 240px; height: 30px;">
+          </div>
+          <div class="creationPageType">
+            <h5>Plate type</h5>
+            <select name="type" id="type" style="width: 240px; height: 30px;">
+              <option value="Steel">Steel Bowl</option>
+              <option value="Ceramic">Ceramic Plate</option>
+              <option value="Wooden">Wooden Plate</option>
+              <option value="Bronze">Bronze Bowl</option>
+            </select>
+          </div>
+          <button type="button" class="creationPageSubmit" onclick="addPlate()">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
